@@ -23,7 +23,8 @@
 
 // define model =================
     var Todo = mongoose.model('Todo', {
-        text : String
+        text : String,
+        href : String
     });    
 
 // Express routes ======================================================================
@@ -49,7 +50,7 @@
         // create a todo, information comes from AJAX request from Angular
         Todo.create({
             text : req.body.text,
-            done : false
+            href : req.body.href
         }, function(err, todo) {
             if (err)
                 res.send(err);
