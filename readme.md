@@ -5,9 +5,11 @@ This is a alternative to the tutorial given in https://scotch.io/tutorials/creat
 # Set Up
 
 1- Install mongoDB http://docs.mongodb.org/manual/installation/
-2- Install npm and nodejs
-   sudo apt-get install nodejs
-   sudo apt-get install npm
+2- Install npm and nodejs (ubuntu)
+   install curl if you still dont have it -  sudo apt-get install curl
+   add ppa - curl -sL https://deb.nodesource.com/setup | sudo bash -
+   Then install the node js - sudo apt-get install nodejs
+
 3- Install the app
    go to the folder and run 
       npm install
@@ -15,7 +17,7 @@ This is a alternative to the tutorial given in https://scotch.io/tutorials/creat
 # Run application
 
 goto to the folder and run
-   nodejs server.js
+   node server.js
    go to localhost:8080
 ## Alternative
 
